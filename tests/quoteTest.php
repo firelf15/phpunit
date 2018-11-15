@@ -10,7 +10,7 @@ class QuoteTest extends TestCase {
         $this->assertContains(
             'To boldly go',
             $Quote->truncate(["To boldly go", "where no one has gone before."]),
-            'When slicing, the phrase should be "where no one has gone before."'
+            'When slicing, the phrase should be "To boldly go"'
         );
     }
 }
